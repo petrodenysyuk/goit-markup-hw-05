@@ -494,12 +494,12 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form name="contact-form" class="modal-form"> 
-          <p class="modal-title">Leave your contacts and we will call you back</p>
           <div class="modal-field">
-            <label class="modal-label" for="username">Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="modal-input-wrap">
-              <input class="modal-input" type="text" name="personal-name" id="username">
+              <input class="modal-input" type="text" name="user-name" id="user-name">
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
@@ -526,15 +526,21 @@
               
             </div>
           </div>
-          <div class="modal-field">
-            <label class="modal-label" for="comments">Comment</label>
-            <textarea class="modal-textarea modal-input" name="comment-area" id="comments" rows="5" placeholder="Text input"></textarea>
+          <div class="textarea-field">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea class="modal-textarea" name="comment-area" id="user-comment" rows="5" placeholder="Text input"></textarea>
           </div>
           <div class="agreement-wrap">
-            <svg class="agreement-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-agree"></use>
-            </svg>
-            <p class="agreement-text">I accept the terms and conditions of the <span class="">Privacy Policy</span></p>
+            <input class="check-input visually-hidden" type="checkbox" name="user-privacy" value="true" id="user-privacy">
+            <label class="privacy-label" for="user-privacy">
+              <span class="icon-wrap"><svg class="agreement-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-agree"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="agreement-text" href="">Privacy Policy</a>
+            </label>
+            
           </div>
           <button class="modal-btn" type="submit">Send</button>
         </form>
