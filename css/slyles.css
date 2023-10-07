@@ -768,15 +768,8 @@ color: var(--ocean, #404bbf);
 .agreement-text {
     color: var(--iris);
 }
-.check-input {
-    transition-property: background-color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-}
-.check-input:checked {
-    border: 1px solid var(--iris);
-}
-.check-input:checked + .icon-wrap {
+
+.check-input:checked + .privacy-label .icon-wrap {
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
