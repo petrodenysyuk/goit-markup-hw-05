@@ -722,6 +722,7 @@ color: var(--ocean, #404bbf);
     margin-bottom: 16px;
 }
 .modal-textarea {
+    color: rgba(46, 47, 66, 0.4);
     height: 120px;
     width: 100%;
     font-size: 12px;
