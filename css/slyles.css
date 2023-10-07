@@ -448,7 +448,17 @@ color: var(--ocean, #404bbf);
 .social-icon {
     fill: var(--cloud);
 }
+.subscribe-wrap {
 
+}
+.subscribe-title {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
 .subscribe-form {
     display: flex;
     gap: 24px;
@@ -456,47 +466,54 @@ color: var(--ocean, #404bbf);
     margin-left: auto;
 }
 .subscribe-label {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    
+
 }
 .subscribe-input {
     color: var(--white);
-    background-color: var(--navyblue);
+    background-color: transparent;
     font-family: Roboto, sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     width: 264px;
+    height: 40px;
     border-radius: 4px;
     border: 1px solid var(--white);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 8px 16px;
-    display: inline-block;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    padding-left: 16px;
+    
+}
+::placeholder {
+    color: var(--white);
 }
 .subscribe-btn {
     color: var(--white, #FFF);
     background-color: var(--iris, #4D5AE5);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     display: flex;
-    gap: 16px;
+    cursor: pointer;
     border: none;
     border-radius: 4px;
-    max-width: 165px;
-    align-self: flex-end;
+    min-width: 165px;
+    height: 40px;
+    align-items: center;
     padding: 8px 24px;
+    justify-content: center;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .subscribe-icon {
+    margin-left: 16px;
     fill: var(--white);
 }
 .subscribe-btn:hover,
